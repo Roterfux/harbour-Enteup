@@ -1,0 +1,11 @@
+[Unit]
+Description=Enteup - automatic backup of new photos to Ente
+After=post-user-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/share/harbour-enteup/python/autobackup.py
+Nice=10
+IOSchedulingClass=idle
+# a run that hangs (no network answer) must not block the next ones
+TimeoutStartSec=2h

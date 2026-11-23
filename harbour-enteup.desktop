@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Application
+Name=Enteup
+Comment=Upload photos to Ente
+Icon=harbour-enteup
+Exec=sailfish-qml harbour-enteup
+X-Nemo-Application-Type=silica-qt5
+
+[X-Sailjail]
+OrganizationName=harbour
+ApplicationName=enteup
+# Internet: talk to the Ente server and its storage.
+# Pictures, Videos: read the photos and videos to upload (the camera saves to
+#           Pictures/Camera and Videos/Camera).
+# MediaIndexing: the pickers list photos through the media index; without it
+#           they stay empty.
+# RemovableMedia: photos stored on an SD card.
+# Downloads, Documents: further upload sources the user may add.
+# Audio: the sound of videos played from the account.
+Permissions=Internet;Audio;Pictures;Videos;Downloads;Documents;MediaIndexing;RemovableMedia

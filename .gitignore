@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+RPMS/
+SRPMS/
+BUILD/
+BUILDROOT/
+SOURCES/
+*.tar.bz2
